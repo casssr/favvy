@@ -409,10 +409,64 @@ body{
   <p class="loader-txt">just for you</p>
 </div>
 
-<!-- AMBIENT AUDIO (placeholder — swap src) -->
-<audio id="bgm" autoplay loop>
-  <source src="audio/Johnny-Drille-In-Time-ft-Angelique-Kidjo-(JustNaija.com).mp3" type="audio/mpeg">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loop Audio Button</title>
+
+<style>
+.audio-btn {
+    background: linear-gradient(135deg, #ff4fa3, #ff7bc3);
+    color: #fff;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(255, 79, 163, 0.35);
+    transition: all 0.3s ease;
+}
+
+.audio-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(255, 79, 163, 0.45);
+}
+
+.audio-btn:active {
+    transform: scale(0.98);
+}
+</style>
+</head>
+<body>
+
+<button class="audio-btn" onclick="toggleAudio()">
+    ▶ Play Music
+</button>
+
+<audio id="bgMusic" loop>
+    <source src="YOUR-AUDIO-FILE.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+const audio = document.getElementById('bgMusic');
+const button = document.querySelector('.audio-btn');
+
+function toggleAudio() {
+    if (audio.paused) {
+        audio.play();
+        button.innerHTML = '⏸ Pause Music';
+    } else {
+        audio.pause();
+        button.innerHTML = '▶ Play Music';
+    }
+}
+</script>
+
+</body>
+</html>
 
 <!-- ══════════════════════════════════════════
   S1 · OPENING
