@@ -296,4 +296,361 @@ body{background:var(--black);color:var(--white);font-family:'DM Sans',sans-serif
     <p class="body-text" style="text-align:center;margin-bottom:4px">Then. Now. The woman he raised.</p>
     <div class="pride-grid">
       <div class="pride-slot mslot" id="wrap-tb1" onclick="triggerSlot('fi-tb1','wrap-tb1')">
-        <input class="slot-file" id="fi-tb1" type="file" accept="image/*,video/*" onchange="loadSlot
+        <input class="slot-file" id="fi-tb1" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv-tb1','wrap-tb1')">
+        <img class="stock-img" src="images/photo_5897533011798986333_x.jpg" alt="throwback" loading="eager">
+        <div class="pride-label">throwback · tap to change</div>
+        <div class="spv" id="pv-tb1"></div>
+        <button class="sremove" onclick="clearSlot(event,'pv-tb1','fi-tb1','wrap-tb1')">✕</button>
+      </div>
+      <div class="pride-slot mslot" id="wrap-tb2" onclick="triggerSlot('fi-tb2','wrap-tb2')">
+        <input class="slot-file" id="fi-tb2" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv-tb2','wrap-tb2')">
+        <img class="stock-img" src="images/photo_5897533011798986334_x.jpg" alt="present" loading="eager">
+        <div class="pride-label">right now · tap to change</div>
+        <div class="spv" id="pv-tb2"></div>
+        <button class="sremove" onclick="clearSlot(event,'pv-tb2','fi-tb2','wrap-tb2')">✕</button>
+      </div>
+    </div>
+    <p class="body-text" style="text-align:center;margin-top:28px">Same girl. <span class="hl">Different level.</span> He knew from day one.</p>
+  </div>
+</section>
+
+<!-- S5 · WHO HE WAS -->
+<section class="scene" id="s5">
+  <div class="vbg">
+    <video autoplay muted loop playsinline>
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-stars-in-space-background-1610-large.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="scene-inner">
+    <div class="divider-spacer"></div>
+    <span class="eyebrow">The man himself</span>
+    <div class="prose-block">
+      <p class="prose-graf">His kind of love : quiet or loud, serious or embarrassing — was <em>his</em>. Unmistakably his.</p>
+      <div class="prose-light-moment">
+        <span class="prose-light-icon">🪑</span>
+        <em>He had a chair. You know the one. Nobody sat in it. That was law.</em>
+      </div>
+      <p class="prose-graf">He's in your laugh. In how you handle things. In the parts of you that are <span class="hl">quietly unstoppable</span>.<br>He didn't go anywhere. He just changed addresses.</p>
+    </div>
+  </div>
+</section>
+
+<!-- S6 · DAD TRIBUTE -->
+<section class="scene" id="s6">
+  <div class="scene-inner">
+    <div class="divider-spacer"></div>
+    <span class="eyebrow">A page for him</span>
+    <h2 class="section-title">Since I don't have his photo,<br>here is his <em>portrait.</em></h2>
+    <div class="dad-card">
+      <span class="dad-drawing">
+        <img src="images/d5aa4581-6878-4510-a23e-fbdbd0f913e0_removalai_preview.png" alt="Description" loading="eager" width="250" height="250" style="display:block;margin:0 auto">
+      </span>
+      <div class="dad-name">Daddy</div>
+      <div class="dad-sub">the man · the legend · Daddy Favour</div>
+      <p class="dad-note">"No picture needed. His face lives right where the ache is — and that's the most faithful portrait there is."</p>
+      <div class="dad-border"></div>
+    </div>
+
+    <!-- GALLERY SLOTS — FIXED -->
+    <div style="margin-top:36px;max-width:560px;width:100%">
+      <div class="media-grid cols-2">
+
+        <div class="mslot tall" id="wrap1" onclick="triggerSlot('fi1','wrap1')">
+          <input class="slot-file" id="fi1" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv1','wrap1')">
+          <img class="stock-img" src="images/photo_5897533011798986348_y.jpg" alt="memory" loading="eager">
+          <div class="sph">
+            <span class="sph-label" style="position:absolute;bottom:14px;left:0;right:0;text-align:center">your memory · tap to add</span>
+          </div>
+          <div class="spv" id="pv1"></div>
+          <button class="sremove" onclick="clearSlot(event,'pv1','fi1','wrap1')">✕</button>
+        </div>
+
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div class="mslot square" id="wrap2" onclick="triggerSlot('fi2','wrap2')">
+            <input class="slot-file" id="fi2" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv2','wrap2')">
+            <img class="stock-img" src="images/photo_5897533011798986341_y.jpg" alt="flowers" loading="eager">
+            <div class="sph">
+              <span class="sph-label" style="position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.58rem">tap to add yours</span>
+            </div>
+            <div class="spv" id="pv2"></div>
+            <button class="sremove" onclick="clearSlot(event,'pv2','fi2','wrap2')">✕</button>
+          </div>
+
+          <div class="mslot square" id="wrap3" onclick="triggerSlot('fi3','wrap3')">
+            <input class="slot-file" id="fi3" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv3','wrap3')">
+            <img class="stock-img" src="images/photo_5897533011798986342_y.jpg" alt="candle" loading="eager">
+            <div class="sph">
+              <span class="sph-label" style="position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.58rem">tap to add yours</span>
+            </div>
+            <div class="spv" id="pv3"></div>
+            <button class="sremove" onclick="clearSlot(event,'pv3','fi3','wrap3')">✕</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S7 · TRUTH CARDS -->
+<section class="scene" id="s7">
+  <div class="vbg">
+    <video autoplay muted loop playsinline>
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-pink-and-purple-background-28937-large.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="scene-inner">
+    <div class="divider-spacer"></div>
+    <span class="eyebrow">Real ones only</span>
+    <h2 class="section-title">Things nobody <em>says</em><br>but everyone needs to hear.</h2>
+    <div class="truth-stack" id="truthGrid">
+      <div class="tc" data-delay="0">
+        <p class="tc-num">01 · GRIEF</p>
+        <p class="tc-txt">The reason Sunday broke you? <span class="hl">You loved him that hard.</span> Big grief only comes from big love.</p>
+      </div>
+      <div class="tc" data-delay="200">
+        <p class="tc-num">02 · LEGACY</p>
+        <p class="tc-txt">He didn't disappear. He became the voice that says <span class="hl">"you've got this"</span> on the hard mornings. That's not memory. That's still him.</p>
+      </div>
+      <div class="tc" data-delay="400">
+        <p class="tc-num">03 · PERMISSION</p>
+        <p class="tc-txt">Cry <em>and</em> laugh. Be a mess <em>and</em> be okay. Miss him <em>and</em> celebrate him. Both at once — that's not contradiction. That's love.</p>
+      </div>
+      <div class="tc" data-delay="600">
+        <p class="tc-num">04 · YOU</p>
+        <p class="tc-txt">Feeling this deeply isn't a wound. It's your <span class="hl">superpower</span>. He gave you that. What a gift.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S8 · CHURCH CALL -->
+<section class="scene" id="s8">
+  <div class="vbg">
+    <video autoplay muted loop playsinline>
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-candles-in-the-dark-4k-background-43502-large.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="scene-inner">
+    <div class="divider-spacer"></div>
+    <span class="eyebrow">Come as you are</span>
+    <div class="church-card">
+      <span class="church-icon">⛪</span>
+      <h2 class="church-title">Go to church.<br><em>Not to hold it together.</em><br>To let it out.</h2>
+      <p class="church-body">
+        Church is not where you go to prove you're fine.<br><br>
+        It is <span class="hl">where you go when you're not.</span><br><br>
+        People have walked through those doors barely holding on and left lighter than they came. You're allowed to be one of them.
+      </p>
+      <div class="church-steps">
+        <div class="cstep">
+          <span class="cstep-icon">🌅</span>
+          <div class="cstep-txt"><strong>Go on a weekday.</strong> When it's quiet. Just you, the building, and God. No crowd. No performance.</div>
+        </div>
+        <div class="cstep">
+          <span class="cstep-icon">💬</span>
+          <div class="cstep-txt"><strong>Tell Him what you told TikTok.</strong> He already knows. He just wants to hear it from you.</div>
+        </div>
+        <div class="cstep">
+          <span class="cstep-icon">🌸</span>
+          <div class="cstep-txt"><strong>Then celebrate Daddy.</strong> With tears. With laughter. In the house of the God he believed in.</div>
+        </div>
+      </div>
+    </div>
+    <p class="body-text" style="margin-top:28px;text-align:center">
+      <span class="hl">Broken things belong in church.</span><br>Go. Be held. Celebrate him there.<br>I KNOW EASIER SAID THAN DONE BUT TRY
+    </p>
+  </div>
+</section>
+
+<!-- S9 · PROUD DAD -->
+<section class="scene" id="s9">
+  <div class="scene-inner">
+    <div class="divider-spacer"></div>
+    <span class="eyebrow">He sees you</span>
+    <h2 class="section-title">Dad would be so <em>proud</em> of the woman you've become.</h2>
+    <div class="prose-block">
+      <p class="prose-graf" style="text-align:center">You built yourself. Through loss, through grief, through figuring it out without him there. The independence. The resilience. <span class="hl">That wasn't by accident.</span></p>
+      <div class="prose-accent" style="text-align:center;border-left:none;border-top:1px solid rgba(244,114,182,.3);border-bottom:1px solid rgba(244,114,182,.3);padding:24px 0;margin:28px 0">"He raised that. Every bit of it."</div>
+      <p class="prose-graf" style="text-align:center">She is his greatest work. And wherever he is — <em>he knows it.</em></p>
+    </div>
+    <div class="media-grid cols-2" style="max-width:480px;margin-top:36px">
+      <div class="mslot square" id="wrap4" onclick="triggerSlot('fi4','wrap4')">
+        <input class="slot-file" id="fi4" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv4','wrap4')">
+        <img class="stock-img" src="images/photo_5897533011798986344_y.jpg" alt="her photo" loading="eager">
+        <div class="sph"><span class="sph-label" style="position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.58rem">tap to add your photo</span></div>
+        <div class="spv" id="pv4"></div>
+        <button class="sremove" onclick="clearSlot(event,'pv4','fi4','wrap4')">✕</button>
+      </div>
+      <div class="mslot square" id="wrap5" onclick="triggerSlot('fi5','wrap5')">
+        <input class="slot-file" id="fi5" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv5','wrap5')">
+        <img class="stock-img" src="images/photo_5897533011798986334_x.jpg" alt="her now" loading="eager">
+        <div class="sph"><span class="sph-label" style="position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.58rem">tap to add your photo</span></div>
+        <div class="spv" id="pv5"></div>
+        <button class="sremove" onclick="clearSlot(event,'pv5','fi5','wrap5')">✕</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- S10 · FINALE -->
+<section class="scene" id="s10">
+  <div class="vbg">
+    <video autoplay muted loop playsinline>
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-glittering-gold-particles-falling-43611-large.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="scene-inner">
+    <div class="divider-spacer"></div>
+    <span class="finale-icon">🌸</span>
+    <h2 class="finale-title">You're doing<br>so good.</h2>
+    <p class="finale-sub">Even on the days that knock the wind out of you.<br><em>Especially</em> on Sunday.</p>
+    <div class="contact-card">
+      <span class="contact-icon">💬</span>
+      <div class="contact-title">You can always come to me.</div>
+      <p class="contact-txt">Talk. Rant. Vent. Cry. Laugh about nothing.<br>Whenever. <span class="hl">Whatever.</span><br><br><strong style="color:var(--white)">Just hit me up. I'm always here.</strong></p>
+    </div>
+    <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;color:rgba(249,240,245,.3);max-width:400px;text-align:center;line-height:1.7;margin-bottom:40px">
+      Happy Father's Day to every girl whose dad lives in her chest now. The love doesn't end. It just changes shape.
+    </p>
+    <button class="back-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ back to the beginning</button>
+  </div>
+</section>
+
+<script>
+/* CURSOR */
+const cur=document.getElementById('cursor');
+const ring=document.getElementById('cursor-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{
+  mx=e.clientX;my=e.clientY;
+  cur.style.left=mx+'px';cur.style.top=my+'px';
+});
+function animRing(){
+  rx+=(mx-rx)*.1;ry+=(my-ry)*.1;
+  ring.style.left=rx+'px';ring.style.top=ry+'px';
+  requestAnimationFrame(animRing);
+}
+animRing();
+document.querySelectorAll('button,.tiktok-card,.mslot,.pride-slot,.tc,.church-card,.contact-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.style.width=cur.style.height='22px';ring.style.width=ring.style.height='50px'});
+  el.addEventListener('mouseleave',()=>{cur.style.width=cur.style.height='10px';ring.style.width=ring.style.height='32px'});
+});
+
+/* STARFIELD */
+const canvas=document.getElementById('starfield');
+const ctx=canvas.getContext('2d');
+let stars=[];
+function resize(){canvas.width=innerWidth;canvas.height=innerHeight}
+function makeStars(){
+  stars=Array.from({length:220},()=>({
+    x:Math.random()*canvas.width,y:Math.random()*canvas.height,
+    r:Math.random()*1+.2,alpha:Math.random(),
+    speed:Math.random()*.003+.001,phase:Math.random()*Math.PI*2,
+    pink:Math.random()>.65
+  }));
+}
+function drawStars(ts){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  stars.forEach(s=>{
+    s.alpha=.2+.6*Math.sin(ts*s.speed+s.phase);
+    ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+    ctx.fillStyle=s.pink?`rgba(244,114,182,${s.alpha})`:`rgba(255,255,255,${s.alpha*.7})`;
+    ctx.fill();
+  });
+  requestAnimationFrame(drawStars);
+}
+resize();makeStars();requestAnimationFrame(drawStars);
+window.addEventListener('resize',()=>{resize();makeStars()});
+
+/* PETALS */
+function createPetal(){
+  const p=document.createElement('div');
+  p.className='petal';
+  p.textContent='🌸';
+  p.style.cssText=`left:${Math.random()*100}vw;font-size:${Math.random()*.8+.5}rem;animation-duration:${Math.random()*8+7}s;animation-delay:${Math.random()*6}s;opacity:0`;
+  document.getElementById('petals').appendChild(p);
+  setTimeout(()=>p.remove(),(Math.random()*8+7+6)*1000);
+}
+setInterval(createPetal,1400);
+
+/* LOADER */
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    document.getElementById('loader').classList.add('out');
+    setTimeout(()=>document.getElementById('loader').remove(),1000);
+  },1800);
+});
+
+/* OBSERVER */
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(!e.isIntersecting)return;
+    e.target.classList.add('visible');
+    if(e.target.id==='s7'){
+      document.querySelectorAll('#truthGrid .tc').forEach(el=>{
+        setTimeout(()=>el.classList.add('show'),+el.dataset.delay||0);
+      });
+    }
+  });
+},{threshold:0.1});
+document.querySelectorAll('.scene').forEach(s=>obs.observe(s));
+
+/* PARALLAX */
+window.addEventListener('scroll',()=>{
+  const h=document.getElementById('s1');
+  if(h)h.querySelector('.scene-inner').style.transform=`translateY(${scrollY*.08}px)`;
+});
+
+/* MEDIA SLOTS */
+function triggerSlot(inputId,wrapId){
+  const pv=document.getElementById(wrapId).querySelector('.spv');
+  if(pv&&pv.classList.contains('on'))return;
+  document.getElementById(inputId).click();
+}
+function loadSlot(input,pvId,wrapId){
+  const file=input.files[0];
+  if(!file)return;
+  const url=URL.createObjectURL(file);
+  const pv=document.getElementById(pvId);
+  pv.innerHTML='';
+  let el;
+  if(file.type.startsWith('video/')){
+    el=document.createElement('video');
+    el.autoplay=true;el.muted=true;el.loop=true;el.playsInline=true;
+  } else {
+    el=document.createElement('img');el.alt='memory';
+  }
+  el.src=url;
+  pv.appendChild(el);
+  pv.classList.add('on');
+  const stock=document.getElementById(wrapId).querySelector('.stock-img');
+  if(stock)stock.style.opacity='0';
+  document.getElementById(wrapId).querySelector('.sph').style.opacity='0';
+}
+function clearSlot(e,pvId,inputId,wrapId){
+  e.stopPropagation();
+  const pv=document.getElementById(pvId);
+  pv.innerHTML='';pv.classList.remove('on');
+  document.getElementById(inputId).value='';
+  const stock=document.getElementById(wrapId).querySelector('.stock-img');
+  if(stock)stock.style.opacity='.85';
+  document.getElementById(wrapId).querySelector('.sph').style.opacity='1';
+}
+
+/* FADE IN TEXT BLOCKS */
+const textObs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      e.target.style.opacity='1';
+      e.target.style.transform='translateY(0)';
+    }
+  });
+},{threshold:0.15});
+document.querySelectorAll('.prose-graf,.prose-accent,.prose-light-moment,.cstep').forEach((el,i)=>{
+  el.style.cssText+='opacity:0;transform:translateY(28px);transition:opacity .7s ease '+(i*.1)+'s,transform .7s ease '+(i*.1)+'s';
+  textObs.observe(el);
+});
+</script>
+</body>
+</html>
