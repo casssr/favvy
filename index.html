@@ -409,64 +409,10 @@ body{
   <p class="loader-txt">just for you</p>
 </div>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Loop Audio Button</title>
 
-<style>
-.audio-btn {
-    background: linear-gradient(135deg, #ff4fa3, #ff7bc3);
-    color: #fff;
-    border: none;
-    padding: 14px 28px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    box-shadow: 0 8px 20px rgba(255, 79, 163, 0.35);
-    transition: all 0.3s ease;
-}
 
-.audio-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 24px rgba(255, 79, 163, 0.45);
-}
 
-.audio-btn:active {
-    transform: scale(0.98);
-}
-</style>
-</head>
-<body>
 
-<button class="audio-btn" onclick="toggleAudio()">
-    ▶ Play Music
-</button>
-
-<audio id="bgMusic" loop>
-    <source src="YOUR-AUDIO-FILE.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-const audio = document.getElementById('bgMusic');
-const button = document.querySelector('.audio-btn');
-
-function toggleAudio() {
-    if (audio.paused) {
-        audio.play();
-        button.innerHTML = '⏸ Pause Music';
-    } else {
-        audio.pause();
-        button.innerHTML = '▶ Play Music';
-    }
-}
-</script>
-
-</body>
-</html>
 
 <!-- ══════════════════════════════════════════
   S1 · OPENING
@@ -481,6 +427,7 @@ function toggleAudio() {
     <span class="eyebrow-white" style="font-family:'Space Mono',monospace;font-size:.62rem;letter-spacing:5px;color:rgba(249,240,245,.3);border-color:rgba(249,240,245,.08);background:rgba(249,240,245,.04);display:inline-block;padding:6px 18px;border-radius:100px;border:1px solid;margin-bottom:28px;">a letter · just for you</span>
     <h1 class="display">Hey,<br><em>Beautiful.</em></h1>
     <div class="glow-rule"></div>
+    <audio id="music" src="audio/Johnny-Drille-In-Time-ft-Angelique-Kidjo-(JustNaija.com).mp3" loop></audio><button onclick="document.getElementById('music').play()" style="background:#ff4fa3;color:#fff;border:none;padding:12px 24px;border-radius:50px;cursor:pointer;font-weight:bold;">▶ Play Music</button>
     <p class="body-text" style="text-align:center">Sunday was a lot. This is for you.</p>
     <div class="scroll-cta">
       <span>scroll</span>
