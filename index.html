@@ -410,7 +410,7 @@ body{
 </div>
 
 <!-- AMBIENT AUDIO (placeholder — swap src) -->
-<audio id="bgm" loop>
+<audio id="bgm" autoplay loop>
   <source src="audio/Johnny-Drille-In-Time-ft-Angelique-Kidjo-(JustNaija.com).mp3" type="audio/mpeg">
 </audio>
 
@@ -515,14 +515,14 @@ body{
     <!-- THROWBACK SLOT -->
     <div class="pride-grid">
       <div class="pride-slot mslot" id="wrap-tb1" onclick="triggerSlot('fi-tb1','wrap-tb1')">
-        <input class="slot-file" id="fi-tb1" type="img" accept="image/*,video/*" onchange="loadSlot(this,'pv-tb1','wrap-tb1')">
+        <input class="slot-file" id="fi-tb1" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv-tb1','wrap-tb1')">
         <img class="stock-img" src="images/photo_5897533011798986333_x.jpg" alt="throwback placeholder">
         <div class="pride-label">throwback · tap to change</div>
         <div class="spv" id="pv-tb1"></div>
         <button class="sremove" onclick="clearSlot(event,'pv-tb1','fi-tb1','wrap-tb1')">✕</button>
       </div>
       <div class="pride-slot mslot" id="wrap-tb2" onclick="triggerSlot('fi-tb2','wrap-tb2')">
-        <input class="slot-file" id="fi-tb2" type="img" accept="image/*,video/*" onchange="loadSlot(this,'pv-tb2','wrap-tb2')">
+        <input class="slot-file" id="fi-tb2" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv-tb2','wrap-tb2')">
         <img class="stock-img" src="images/photo_5897533011798986334_x.jpg" alt="present placeholder">
         <div class="pride-label">right now · tap to change</div>
         <div class="spv" id="pv-tb2"></div>
@@ -589,7 +589,7 @@ body{
       <!-- Gallery slots for any photos she does have -->
       <div class="media-grid cols-2">
         <div class="mslot tall" id="wrap1" onclick="triggerSlot('fi1','wrap1')">
-          <input class="slot-file" id="fi1" type="img" accept="image/*,video/*" onchange="loadSlot(this,'pv1','wrap1')">
+          <input class="slot-file" id="fi1" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv1','wrap1')">
           <img class="stock-img" src="images/photo_5897533011798986348_y.jpg" alt="memory placeholder" style="position:absolute;inset:0">
           <div class="sph" style="background:linear-gradient(to top,rgba(7,7,10,.6),transparent)">
             <span class="sph-label" style="position:absolute;bottom:14px;left:0;right:0;text-align:center;">your memory · tap to add</span>
@@ -599,14 +599,14 @@ body{
         </div>
         <div style="display:flex;flex-direction:column;gap:14px">
           <div class="mslot square" id="wrap2" onclick="triggerSlot('fi2','wrap2')">
-            <input class="slot-file" id="fi2" type="img" accept="image/*,video/*" onchange="loadSlot(this,'pv2','wrap2')">
+            <input class="slot-file" id="fi2" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv2','wrap2')">
             <img class="stock-img" src="images/photo_5897533011798986341_y.jpg" alt="flowers">
             <div class="sph"><span class="sph-label" style="position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.58rem">tap to add yours</span></div>
             <div class="spv" id="pv2"></div>
             <button class="sremove" onclick="clearSlot(event,'pv2','fi2','wrap2')">✕</button>
           </div>
           <div class="mslot square" id="wrap3" onclick="triggerSlot('fi3','wrap3')">
-            <input class="slot-file" id="fi3" type="img" accept="image/*,video/*" onchange="loadSlot(this,'pv3','wrap3')">
+            <input class="slot-file" id="fi3" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv3','wrap3')">
             <img class="stock-img" src="images/photo_5897533011798986342_y.jpg" alt="candle">
             <div class="sph"><span class="sph-label" style="position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.58rem">tap to add yours</span></div>
             <div class="spv" id="pv3"></div>
@@ -715,14 +715,14 @@ body{
     <!-- Extra pride slots -->
     <div class="media-grid cols-2" style="max-width:480px;margin-top:36px">
       <div class="mslot square" id="wrap4" onclick="triggerSlot('fi4','wrap4')">
-        <input class="slot-file" id="fi4" type="img" accept="image/*,video/*" onchange="loadSlot(this,'pv4','wrap4')">
+        <input class="slot-file" id="fi4" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv4','wrap4')">
         <img class="stock-img" src="images/photo_5897533011798986344_y.jpg" alt="her photo placeholder">
         <div class="sph"><span class="sph-label" style="position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.58rem">tap to add your photo</span></div>
         <div class="spv" id="pv4"></div>
         <button class="sremove" onclick="clearSlot(event,'pv4','fi4','wrap4')">✕</button>
       </div>
       <div class="mslot square" id="wrap5" onclick="triggerSlot('fi5','wrap5')">
-        <input class="slot-file" id="fi5" type="img" accept="image/*,video/*" onchange="loadSlot(this,'pv5','wrap5')">
+        <input class="slot-file" id="fi5" type="file" accept="image/*,video/*" onchange="loadSlot(this,'pv5','wrap5')">
         <img class="stock-img" src="images/photo_5897533011798986334_x.jpg" alt="her present placeholder">
         <div class="sph"><span class="sph-label" style="position:absolute;bottom:10px;left:0;right:0;text-align:center;font-size:.58rem">tap to add your photo</span></div>
         <div class="spv" id="pv5"></div>
